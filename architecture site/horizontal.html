@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Horizontal</title>
+
+	<!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="horizontal.css">
+
+</head>
+<body>
+
+
+	<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-lg py-0 fixed-top">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav ml-auto mt-3 mr-4">
+                <li class="nav-item active">
+                    <a href="thle.html" class="nav-link">MENU</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#highlights" class="nav-link">HIGHLIGHTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sessions" class="nav-link">SESSIONS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contactus" class="nav-link" id="contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section>
+		<div id="animate-area"></div>
+		<h2 id="showMe">ARCHITECTURE DALI SAN APO</h2>
+	</section>
+
+
+
+
+    <section id="about">
+        <div class="container-fluid text-center">
+            <div class="row section1 justify-content-center">
+                <h1>ABOUT</h1>
+            </div>
+            <div class="row section2">
+                <div class="col-12 mb-4">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae beatae, maiores deserunt in voluptatibus aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur repellat eveniet quidem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae beatae, maiores deserunt in voluptatibus aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur repellat eveniet quidem.<span id="dots"> ... </span><span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae beatae, maiores deserunt in voluptatibus aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur repellat eveniet quidem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae beatae, maiores deserunt in voluptatibus aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur repellat eveniet quidem.</span>
+                    </p>
+
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="parallax"></div>
+
+
+    <section id="highlights">
+
+        <h2 id="txt">Highlights</h2>
+        <h2 id="txtorange">ARCHITECTURE DALI SAN APO</h2>
+
+        <div class="wrapper">
+        <div class="parent" onclick="">
+            <div class="child bg-one">
+                <a href="#">Barcelona</a>
+            </div>
+        </div>
+
+        <div class="parent right" onclick="">
+            <div class="child bg-two">
+                <a href="#">Madrid</a>
+            </div>
+        </div>
+
+        <div class="parent" onclick="">
+            <div class="child bg-three">
+                <a href="#">London</a>
+            </div>
+        </div>
+
+        <div class="parent right" onclick="">
+            <div class="child bg-four">
+                <a href="#">New York</a>
+            </div>
+        </div>
+
+        <div class="parent" onclick="">
+            <div class="child bg-five">
+                <a href="#">Beijing</a>
+            </div>
+        </div>
+
+        <div class="parent right" onclick="">
+            <div class="child bg-six">
+                <a href="#">Hong Kong</a>
+            </div>
+        </div>
+
+    </section>
+
+<section id="contactus">
+
+    <h2 id="txt">Contact us</h2>
+    <h2 id="txtorange">ARCHITECTURE DALI SAN APO</h2>
+
+    <div class="row section2">
+        <div class="col-6 mb-4">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="700" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a>
+                </div>
+            <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:500px;margin-left: 145px;}
+            </style>
+            </div>
+        </div>
+
+        <div class="col-6 mb-4">
+            <ul>
+                <li>Email:  archidalison@gmail.com</li>
+                <li>Adress: Dikol ahda 12</li>
+                <li>Phone:  +20 2109218201</li>
+             </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+	<script>
+		function myFunction(){
+			var dots = document.getElementById("dots");
+			var moreText = document.getElementById("more");
+			var btnText = document.getElementById("myBtn");
+			if (dots.style.display == "none") {
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more";
+				moreText.style.display = "none";
+			}
+			else {
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less";
+				moreText.style.display = "inline";
+			}
+		}
+	</script>
+
+
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

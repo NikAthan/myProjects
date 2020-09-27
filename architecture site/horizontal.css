@@ -1,0 +1,271 @@
+body{
+	margin: 0;
+	padding: 0;
+	color: black;
+	background: black;
+}
+
+@keyframes animatedBackground{
+	from {
+		background-position: 60% 0;
+	}
+	to {
+		background-position: 120% 0;
+	}
+}
+
+
+#animate-area {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background-image: url(orange2.png);
+	background-size: 80%;
+	background-position: center;
+	background-repeat: repeat-x;
+	-webkit-animation: animatedBackground 3s ease-in 1 forwards;
+	animation: animatedBackground 3s ease-in 1 forwards;
+}
+
+@media (max-width: 1200px) {
+    #animate-area {
+        display: none;
+    }
+}
+
+#showMe {
+	animation: cssAnimation 0s 4s forwards;
+	opacity: 0;
+	transition-duration: opacity 3s;
+	margin-left: 35%;
+	font-family: Lato; 
+	color: white;
+	padding-bottom: 20%;
+	padding-top: 20%;
+}
+
+#about .section1 {
+	background-color: white;
+	color: black;
+	padding-top: 250px;
+	padding-bottom: 150px;
+}
+
+#about .section1 h1 {
+	font-size: 80px;
+	font-weight: 400;
+}
+
+#about .section2 {
+	background-color: black;
+	color: white;
+	padding-top: 150px;
+	padding-bottom: 100px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+
+@keyframes cssAnimation {
+	to {opacity: 1;}
+}
+
+@media (max-width: 1200px) {
+    #showMe {
+    	font-size: 25px;
+    	margin-left: 20%;
+    	margin-bottom: 150px;
+    }
+
+    #about .section1 h1 {
+		font-size: 50px;
+		font-weight: 400;
+	}
+
+	#about .section1 {
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+
+	#about .section2 .lead {
+		font-size: 15px;
+
+	}
+
+}
+
+
+#more {display: none;}
+
+#myBtn {
+	background-color: black;
+	color: white;
+	border-color: white;
+}
+
+@media (min-width: 1200px) {
+    #mainNavbar #contact {
+		border: 2px solid white;
+		border-radius: 40%;
+	}
+
+	#mainNavbar #contact:hover {
+		color: black;
+		background-color: white;
+		font-weight: 600;
+	}
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://i.pinimg.com/originals/2a/5e/92/2a5e9222bc902f48ea3b765bede3942a.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.wrapper {
+    padding: 50px 50px;
+    max-width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1100px;
+}
+
+.right {float: right !important;}
+/* Image zoom on hover + Overlay colour */
+.parent {
+    width: 45%;
+    margin: 20px;
+    height: 300px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+/* Several different images */
+.bg-one {background-image: url(https://dna-barcelona.com/wp-content/uploads/2019/06/calldetes-1-640x427.jpg);}
+.bg-two {background-image: url(https://www.thepinnaclelist.com/wp-content/uploads/2018/02/01-Hong-Kong-Luxury-Villa-Shek-O-Hong-Kong-China.jpg);}
+.bg-three {background-image: url(https://c8.alamy.com/comp/CR66X7/spain-catalonia-barcelona-vallarca-district-palau-gell-by-the-architect-CR66X7.jpg);}
+.bg-four {background-image: url(https://cf.bstatic.com/images/hotel/max1280x900/151/151865559.jpg);}
+.bg-five {background-image: url(https://i.pinimg.com/originals/5f/d7/41/5fd741c26d2232b43506ce3b8144b7c4.jpg);}
+.bg-six {background-image: url(https://i.pinimg.com/originals/5d/f2/eb/5df2ebde1454302546e06cfe63a431fb.jpg);}
+
+
+.wrapper a {
+    display: none;
+    font-size: 25px;
+    color: darkorange !important;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    font-family: "Avenir";
+    /*text-decoration: none;*/
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75);
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .parent {width: 100%; margin: 20px 0px}
+        .wrapper {padding: 20px 20px;}
+}
+
+#highlights #txt {
+	color: white;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 100;
+	padding-top: 570px;
+}
+
+#highlights #txtorange {
+	color: darkorange;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 100;
+	padding-bottom: 50px;
+}
+
+#contactus #txt {
+	color: white;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 100;
+}
+
+#contactus #txtorange {
+	color: darkorange;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 100;
+	padding-bottom: 50px;
+}
+
+#contactus ul {
+	color: white;
+	text-align: center;
+	list-style-type:none;
+	padding-top: 17%;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+#contactus li {
+	padding-bottom: 10px;
+}

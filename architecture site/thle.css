@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	background: black;
+	background-size: auto;
+	color: white;
+}
+
+#mainNavbar .navbar-nav{
+	padding-top: 10%;
+}
+
+#mainNavbar .Orange {
+	color: darkorange;
+}
+
+#about .blurb {
+	border-right: 1px solid darkorange;
+	height: 1800px;
+	padding-top: 1270px;
+}
+
+#about .blurb1 {
+	padding-top: 1270px;
+}
+
+#about h1 {
+	font-size: 25px;
+	font-weight: 300;
+	padding-bottom: 300px;
+}
+
+#about .right{
+	padding-left: 200px;
+	text-align: right;
+}
+
+#about .left {
+	padding-right: 200px;
+}
+	
+
+@media (max-width: 800px) {
+
+	#about {
+		display: none;
+	}
+}
+
